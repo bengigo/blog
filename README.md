@@ -1,6 +1,6 @@
 ## Blog
 
-> Blog is a classic blog website. You can show the list of posts and empower readers to interact with them by adding comments and liking posts.
+> A classic blog website. All users can create posts, comments to and like other users posts.
 
 ## Built With
 
