@@ -4,7 +4,6 @@ class Comment < ApplicationRecord
 
   validates :CommentsCounter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
-
   def update_comments_counter
     post.update(CommentsCounter: post.comments.count)
   end
