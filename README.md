@@ -24,6 +24,10 @@ To setup linters on your local environment, please follow these steps.
 1- Run `bundle install`. <br>
 2- Run `rubocop .` for the errors.
 
+To run the tests
+
+Run `rspec` on terminal window
+
 ### Prerequisites
 
 IDE(VSCode etc.), WSL(for Windows OS), for linters RuboCop
@@ -53,4 +57,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](LICENSE) licensed.
