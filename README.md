@@ -12,17 +12,17 @@
 
 To get a local copy up and running follow these simple example steps.
 
-1- Copy this link `git@github.com:bengigo/blog.git` <br>
-2- Get the directory that you want to clone the repository. <br>
-3- Open the command prompt in this directory. <br>
-4- Write `git clone git@github.com:bengigo/blog.git` <br>
-5- Go to the repository folder in your command prompt `cd blog`. <br>
-6- Go to command line and run `rails server`.
+- Copy this link `git@github.com:bengigo/blog.git`
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone git@github.com:bengigo/blog.git`
+- Go to the repository folder in your command prompt `cd blog`.
+- Go to command line and run `rails server`.
 
 To setup linters on your local environment, please follow these steps.
 
-1- Run `bundle install`. <br>
-2- Run `rubocop .` for the errors.
+- Run `bundle install`.
+- Run `rubocop .` for the errors.
 
 To run the tests
 
@@ -50,10 +50,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
--Thank you to Microverse Inc.
 
 ## 📝 License
 
