@@ -16,5 +16,5 @@
   <p class="post-text"><%=post.Text%></p>
   </div>
   <%end%>
-
+  <button class="all-posts"><%= link_to "See all posts", "users/#{@user.id}/posts"%></button>
 </section>
