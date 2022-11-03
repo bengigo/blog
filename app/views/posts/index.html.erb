@@ -1,1 +1,15 @@
-<h1>Here is every posts of User ...</h1>
+  <img class="user-img" src="<%=@user.Photo%>">
+  <div class="user-info">
+    <h2><%=@user.Name%></h2>
+    <p>Number of posts: <%=@user.PostsCounter || 0%></p>
+  </div>
+
+<% @user_posts.each do |post| %>
+<div class="detailed-post">
+  <h2 class="post-title"><%=post.Title%></h2>
+  <p class="post-text"><%=post.Text%></p>
+  <p class="counters">Comments: <%=post.CommentsCounter || 0 %>, Likes: <%=post.LikesCounter || 0 %></p>
+</div>
+
+<%end%>
+
