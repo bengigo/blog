@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   margin: 20px;
+   padding: 0;
+ }
+
+ .user-card {
+  /* border: 1px solid black; */
+  display: flex;
+ }
+
+ .user-img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.user-info {
+  border: 1px solid black;
+  width: 70vw;
+}
+
+.post-count {
+  float: right;
+}
