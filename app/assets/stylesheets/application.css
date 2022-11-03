@@ -94,3 +94,11 @@ a {
   color: black;
   text-decoration: none;
 }
+
+.comment-container {
+  border: 1px solid black;
+  margin: 20px;
+}
+ .comment {
+  margin: 20px;
+ }

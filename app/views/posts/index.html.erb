@@ -1,11 +1,13 @@
+  <div class="user-card">
   <img class="user-img" src="<%=@user.Photo%>">
   <div class="user-info">
     <h2><%=@user.Name%></h2>
-    <p>Number of posts: <%=@user.PostsCounter || 0%></p>
+    <p class="post-count">Number of posts: <%=@user.PostsCounter || 0%></p>
+    </div>
   </div>
 
 <% @user_posts.each do |post| %>
-<div class="detailed-post">
+<div class="post-card">
   <h2 class="post-title"><%=post.Title%></h2>
   <p class="post-text"><%=post.Text%></p>
   <p class="counters">Comments: <%=post.CommentsCounter || 0 %>, Likes: <%=post.LikesCounter || 0 %></p>
@@ -13,7 +15,7 @@
 
 <div class="comment-container">
 <% post.latest_five_comments do |comment| %>
-<p><%= comment.author.name %>: <%= comment.text %></p>
+<p class="comment"><%= comment.author.name %>: <%= comment.text %></p>
 <% end %>
 </div>
 <%end%>
