@@ -1,1 +1,20 @@
-<h1>User ...'s profile</h1>
+<section class="user-profile">
+  <img class="user-img" src="<%=@user.Photo%>">
+  <div class="user-info">
+    <h2><%=@user.Name%></h2>
+    <p>Number of posts: <%=@user.PostsCounter || 0%></p>
+  </div>
+  <div class="user-bio">
+  <h2 class="bio-title">Bio</h2>
+  <p class="bio-info"><%=@user.Bio%></p>
+  </div>
+  <%@user.latest_three_posts.each do |post| %>
+  <div class="post-card">
+  <%# post title as h2 %>
+  <h2 class="post-title"><%=post.Title%></h2>
+  <%# post text as p %>
+  <p class="post-text"><%=post.Text%></p>
+  </div>
+  <%end%>
+
+</section>
