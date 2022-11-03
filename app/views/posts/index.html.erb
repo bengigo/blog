@@ -11,5 +11,10 @@
   <p class="counters">Comments: <%=post.CommentsCounter || 0 %>, Likes: <%=post.LikesCounter || 0 %></p>
 </div>
 
+<div class="comment-container">
+<% post.latest_five_comments do |comment| %>
+<p><%= comment.author.name %>: <%= comment.text %></p>
+<% end %>
+</div>
 <%end%>
 
