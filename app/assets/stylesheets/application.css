@@ -14,21 +14,21 @@
  *= require_self
  */
 
- *,
- *::before,
- *::after {
-   box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   margin: 20px;
-   padding: 0;
- }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 20px;
+  padding: 0;
+}
 
- .user-card {
+.user-card {
   /* border: 1px solid black; */
   display: flex;
- }
+}
 
- .user-img {
+.user-img {
   width: 150px;
   height: 150px;
   border: 1px solid black;
