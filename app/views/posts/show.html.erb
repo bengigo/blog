@@ -2,10 +2,23 @@
 <h2 class="post-title"><%=@post.Title%></h2>
 <p class="counters">Comments: <%=@post.CommentsCounter || 0 %>, Likes: <%=@post.LikesCounter || 0 %></p>
 <p class="post-text"><%=@post.Text%></p>
+<%= form_with model: @like, url: likes_new_path do |form|%>
+  <%= form.hidden_field :post_id, value: @post.id %>
+  <%= form.submit "❤"  %>
+<% end %>
 </div>
 
 <div class="comment-container">
 <% @post.latest_five_comments do |comment| %>
 <p><%= comment.author.name %>: <%= comment.text %></p>
 <% end %>
+<%= form_with model: @comment, url: comments_new_path do |form| %>
+<div>
+  <%= form.hidden_field :author_id, value: @post.author.id %>
+  <%= form.hidden_field :post_id, value: @post.id %>
+  <%= form.text_area :text, placeholder: "text" %><br>
+  <%= form.submit %>
+</div>
+<%end%>
+</div>
 </div>
