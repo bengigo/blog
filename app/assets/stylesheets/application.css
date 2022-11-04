@@ -96,7 +96,6 @@ a {
 }
 
 .comment-container {
-  border: 1px solid black;
   margin: 20px;
   width: calc(70vw + 170px);
 }
