@@ -1,16 +1,18 @@
   <div class="user-card">
-  <img class="user-img" src="<%=@user.Photo%>">
+  <img class="user-img" src="<%=@user.photo%>">
   <div class="user-info">
-    <h2><%=@user.Name%></h2>
-    <p class="post-count">Number of posts: <%=@user.PostsCounter || 0%></p>
+    <h2><%=@user.name%></h2>
+    <p class="post-count">Number of posts: <%=@user.posts_counter || 0%></p>
     </div>
   </div>
 
 <% @user_posts.each do |post| %>
 <div class="post-card">
-  <h2 class="post-title"><%=post.Title%></h2>
-  <p class="post-text"><%=post.Text%></p>
-  <p class="counters">Comments: <%=post.CommentsCounter || 0 %>, Likes: <%=post.LikesCounter || 0 %></p>
+<a href='/users/<%=@user.id%>/posts/<%=post.id%>' >
+  <h2 class="post-title"><%=post.title%></h2>
+  <p class="post-text"><%=post.text%></p>
+  <p class="counters">Comments: <%=post.comments_counter%>, Likes: <%=post.likes_counter%></p>
+</a>
 </div>
 
 <div class="comment-container">

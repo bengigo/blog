@@ -1,7 +1,7 @@
 <div class="post-card">
-<h2 class="post-title"><%=@post.Title%></h2>
-<p class="counters">Comments: <%=@post.CommentsCounter || 0 %>, Likes: <%=@post.LikesCounter || 0 %></p>
-<p class="post-text"><%=@post.Text%></p>
+<h2 class="post-title"><%=@post.title%></h2>
+<p class="counters">Comments: <%=@post.comments_counter %>, Likes: <%=@post.likes_counter%></p>
+<p class="post-text"><%=@post.text%></p>
 <%= form_with model: @like, url: likes_new_path do |form|%>
   <%= form.hidden_field :post_id, value: @post.id %>
   <%= form.submit "❤"  %>
