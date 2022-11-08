@@ -7,11 +7,11 @@
   </div>
 
 <% @user_posts.each do |post| %>
-<div class="post-card">
+<a href='/users/<%=@user.id%>/posts/<%=post.id%>' class="post-card">
   <h2 class="post-title"><%=post.title%></h2>
   <p class="post-text"><%=post.text%></p>
-  <p class="counters">Comments: <%=post.comments_counter || 0 %>, Likes: <%=post.likes_counter || 0 %></p>
-</div>
+  <p class="counters">Comments: <%=post.comments_counter%>, Likes: <%=post.likes_counter%></p>
+</a>
 
 <div class="comment-container">
 <% post.latest_five_comments do |comment| %>
