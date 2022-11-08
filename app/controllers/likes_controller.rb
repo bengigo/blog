@@ -1,12 +1,3 @@
-# class LikesController < ApplicationController
-#   def create
-#     @like = Like.new(post_id: params[:post_id], author_id: current_user.id)
-#     @like.save
-#     @like.update_likes_counter
-#   end
-# end
-
-
 class LikesController < ApplicationController
   def create
     post = Post.find(params[:post_id])
