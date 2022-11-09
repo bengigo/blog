@@ -1,5 +1,5 @@
 <div class="post-card">
-<h2 class="post-title"><%=@post.title%></h2>
+<h2 class="post-title"><%=@post.title%> | by <%=@post.author.name%></h2>
 <p class="counters">Comments: <%=@post.comments_counter %>, Likes: <%=@post.likes_counter%></p>
 <p class="post-text"><%=@post.text%></p>
 <%= form_with model: @like, url: likes_new_path do |form|%>
@@ -9,7 +9,7 @@
 </div>
 
 <div class="comment-container">
-<% @post.latest_five_comments do |comment| %>
+<% @post.latest_five_comments.each do |comment| %>
 <p><%= comment.author.name %>: <%= comment.text %></p>
 <% end %>
 <%= form_with model: @comment, url: comments_new_path do |form| %>
