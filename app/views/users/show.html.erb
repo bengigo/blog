@@ -17,5 +17,5 @@
     <p class="counters">Comments: <%=post.comments_counter || 0 %>, Likes: <%=post.likes_counter || 0 %></p>
   </div>
   <%end%>
-  <button class="all-posts"><%= link_to "See all posts", "/users/#{@user.id}/posts"%></button>
+  <button value="see-all" class="all-posts"><%= link_to "See all posts", "/users/#{@user.id}/posts"%></button>
 </section>
