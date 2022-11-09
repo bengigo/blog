@@ -40,6 +40,11 @@ IDE(VSCode etc.), WSL(for Windows OS), for linters RuboCop
 - Twitter: [@bengi_gb](https://twitter.com/bengi_gb)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bengigenc/)
 
+👤 Eyasu Teshome
+
+- GitHub: [@EyasuTeshome](https://github.com/EyasuTeshome)
+- Twitter: [@EyasuTeshome](https://twitter.com/EyasuTeshome)
+- LinkedIn: [Eyasu Teshome](https://linkedin.com/in/EyasuTeshome)
 
 ## 🤝 Contributing
 
