@@ -15,12 +15,16 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(title: params[:post][:title], text: params[:post][:text], author_id: current_user.id)
+    @post = Post.new(post_params)
     if @post.save
       redirect_to "/users/#{current_user.id}/posts"
 
     else
       render :new
     end
+  end
+
+  def post_params
+    params.require(:new).permit(:title, :text)
   end
 end
